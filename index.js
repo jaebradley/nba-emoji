@@ -1,6 +1,5 @@
 'use es6';
 
-import emoji from 'node-emoji';
 import Team from './src/Team';
 
 
@@ -12,19 +11,19 @@ export default class TeamEmoji {
       }
     }
 
-    throw new Error('Unknown team abbrevation');
+    throw new Error('Unknown team abbreviation');
   }
 
   static getEmojiFromTeam(team) {
-    if !(team instanceof Team) {
+    if (!(team instanceof Team)) {
       throw new Error('team must be a Team instance');
     }
 
     if (team == TeamEmoji.getCurrentChampion()) {
-      return emoji.get(TeamEmoji.getCurrentChampionEmojiValue());
+      return TeamEmoji.getCurrentChampionEmojiValue();
     }
 
-    return emoji.get(team.emoji);
+    return team.emoji;
   }
 
   static getCurrentChampion() {
@@ -32,6 +31,6 @@ export default class TeamEmoji {
   }
 
   static getCurrentChampionEmojiValue() {
-    return 'trophy';
+    return '🏆';
   }
 }
