@@ -8,7 +8,7 @@ import Team from '../src/Team';
 describe('test team emoji client', function() {
   it('tests emoji from abbreviation', function() {
     expect(() => TeamEmoji.getEmojiFromAbbreviation('jae')).to.throw(Error);
-    expect(TeamEmoji.getEmojiFromAbbreviation(Team.BOSTON_CELTICS.abbreviation)).to.eql('🍀');
+    expect(TeamEmoji.getEmojiFromAbbreviation('BOS')).to.eql('🍀');
   });
 
   it('tests emoji from Team', function() {
@@ -18,6 +18,6 @@ describe('test team emoji client', function() {
 
   it('tests current champion', function() {
     expect(TeamEmoji.getCurrentChampion()).to.eql(Team.CLEVELAND_CAVALIERS);
-    expect(TeamEmoji.getCurrentChampionEmojiValue()).to.eql('🏆');
+    expect(TeamEmoji.getCurrentChampionEmoji()).to.eql('🏆');
   });
 });

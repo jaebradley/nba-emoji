@@ -19,18 +19,16 @@ export default class TeamEmoji {
       throw new Error('team must be a Team instance');
     }
 
-    if (team == TeamEmoji.getCurrentChampion()) {
-      return TeamEmoji.getCurrentChampionEmojiValue();
-    }
-
-    return team.emoji;
+    return team == TeamEmoji.getCurrentChampion() ?
+      TeamEmoji.getCurrentChampionEmoji()
+      : team.emoji;
   }
 
   static getCurrentChampion() {
     return Team.CLEVELAND_CAVALIERS;
   }
 
-  static getCurrentChampionEmojiValue() {
+  static getCurrentChampionEmoji() {
     return '🏆';
   }
 }
