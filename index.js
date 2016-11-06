@@ -2,26 +2,17 @@
 
 import Team from './src/Team';
 
-
-export default class TeamEmoji {
-  static getEmojiFromAbbreviation(abbreviation) {
+export default class NbaEmoji {
+  static getEmoji(teamAbbreviation) {
     for (let team of Team.enumValues) {
-      if (team.abbreviation == abbreviation) {
-        return TeamEmoji.getEmojiFromTeam(team);
+      if (team.abbreviation == teamAbbreviation) {
+        return team == NbaEmoji.getCurrentChampion() ?
+          NbaEmoji.getCurrentChampionEmoji()
+          : team.emoji;
       }
     }
 
     throw new Error('Unknown team abbreviation');
-  }
-
-  static getEmojiFromTeam(team) {
-    if (!(team instanceof Team)) {
-      throw new Error('team must be a Team instance');
-    }
-
-    return team == TeamEmoji.getCurrentChampion() ?
-      TeamEmoji.getCurrentChampionEmoji()
-      : team.emoji;
   }
 
   static getCurrentChampion() {
