@@ -27,7 +27,7 @@ describe('test team emoji integration test', function() {
     expect(NbaEmoji.getEmoji('MIL')).to.eql('🍻');
     expect(NbaEmoji.getEmoji('MIN')).to.eql('🐺');
     expect(NbaEmoji.getEmoji('NOP')).to.eql('⚜');
-    expect(NbaEmoji.getEmoji('NYK')).to.eql(🗽);
+    expect(NbaEmoji.getEmoji('NYK')).to.eql('🗽');
     expect(NbaEmoji.getEmoji('OKC')).to.eql('💥');
     expect(NbaEmoji.getEmoji('ORL')).to.eql('🔮');
     expect(NbaEmoji.getEmoji('PHI')).to.eql('🔔');
