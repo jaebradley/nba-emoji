@@ -1,90 +1,89 @@
 # NBA Emojis As A Service
 
 * Atlanta Hawks
-  * abbreviation: `ATL`
-  * emoji: 🐦
+  * `abbreviation`: `ATL`
+  * `emoji`: 🐦
 * Boston Celtics
-  * abbreviation: `BOS`
-  * emoji: 🍀
+  * `abbreviation`: `BOS`
+  * `emoji`: 🍀
 * Brooklyn Nets
-  * abbreviation: `BKN`
-  * emoji: 🌆
+  * `abbreviation`: `BKN`
+  * `emoji`: 🌆
 * Cleveland Cavaliers
-  * abbreviation: `CLE`
-  * emoji: ⚔
+  * `abbreviation`: `CLE`
+  * `emoji`: ⚔
 * Charlotte Hornets
-  * abbreviation: `CHA`
-  * emoji: 🐝:
+  * `abbreviation`: `CHA`
+  * `emoji`: 🐝:
 * Chicago Bulls
-  * abbreviation: `CHI`
-  * emoji: 🐮
+  * `abbreviation`: `CHI`
+  * `emoji`: 🐮
 * Dallas Mavericks
-  * abbreviation: `DAL`
-  * emoji: 🐴
+  * `abbreviation`: `DAL`
+  * `emoji`: 🐴
 * Denver Nuggets
-  * abbreviation: `DEN`
-  * emoji: 🔨
+  * `abbreviation`: `DEN`
+  * `emoji`: 🔨
 * Detroit Pistons
-  * abbreviation: `DET`
-  * emoji: 🔧
+  * `abbreviation`: `DET`
+  * `emoji`: 🔧
 * Golden State Warriors
-  * abbreviation: `GSW`
-  * emoji: 👌
+  * `abbreviation`: `GSW`
+  * `emoji`: 👌
 * Houston Rockets
-  * abbreviation: `HOU`
-  * emoji: 🚀
+  * `abbreviation`: `HOU`
+  * `emoji`: 🚀
 * Indiana Pacers
-  * abbreviation: `IND`
-  * emoji: 🏁
+  * `abbreviation`: `IND`
+  * `emoji`: 🏁
 * Los Angeles Clippers
-  * abbreviation: `LAC`
-  * emoji: 🚢
+  * `abbreviation`: `LAC`
+  * `emoji`: 🚢
 * Los Angeles Lakers
-  * abbreviation: `LAL`
-  * emoji: 🎥
+  * `abbreviation`: `LAL`
+  * `emoji`: 🎥
 * Memphis Grizzles
-  * abbreviation: `MEM`
-  * emoji: 🐻
+  * `abbreviation`: `MEM`
+  * `emoji`: 🐻
 * Miami Heat
-  * abbreviation: `MIA`
-  * emoji: 🔥
+  * `abbreviation`: `MIA`
+  * `emoji`: 🔥
 * Minnesota Timberwolves
-  * abbreviation: `MIN`
-  * emoji: 🐺
+  * `abbreviation`: `MIN`
+  * `emoji`: 🐺
 * New Orleans Pelicans
-  * abbreviation: `NOP`
-  * emoji: ⚜
+  * `abbreviation`: `NOP`
+  * `emoji`: ⚜
 * New York Knicks
-  * abbreviation: `NYK`
-  * emoji: 🗽
+  * `abbreviation`: `NYK`
+  * `emoji`: 🗽
 * Oklahoma City Thunder
-  * abbreviation: `OKC`
-  * emoji: 💥
+  * `abbreviation`: `OKC`
+  * `emoji`: 💥
 * Orlando Magic
-  * abbreviation: `ORL`
-  * emoji: 🔮
+  * `abbreviation`: `ORL`
+  * `emoji`: 🔮
 * Philadelphia 76ers
-  * abbreviation: `PHI`
-  * emoji: 🔔
+  * `abbreviation`: `PHI`
+  * `emoji`: 🔔
 * Phoenix Suns
-  * abbreviation: `PHX`
-  * emoji: 🔆
-
+  * `abbreviation`: `PHX`
+  * `emoji`: 🔆
 * Portland Trail Blazers
-  * abbreviation: `POR`
-  * emoji: 💧
+  * `abbreviation`: `POR`
+  * `emoji`: 💧
 * Sacramento Kings
-  * abbreviation: `SAC`
-  * emoji: 👑
+  * `abbreviation`: `SAC`
+  * `emoji`: 👑
 * San Antonio Spurs
-  * abbreviation: `SAS`
-  * emoji: 🌵
+  * `abbreviation`: `SAS`
+  * `emoji`: 🌵
 * Toronto Raptors
-  * abbreviation: `TOR`
-  * emoji: 🍁
+  * `abbreviation`: `TOR`
+  * `emoji`: 🍁
 * Utah Jazz
-  * abbreviation: `UTA`
-  * emoji: 🎷
+  * `abbreviation`: `UTA`
+  * `emoji`: 🎷
 * Washington Wizards
-  * abbreviation: `WAS`
-  * emoji: 💫
+  * `abbreviation`: `WAS`
+  * `emoji`: 💫
