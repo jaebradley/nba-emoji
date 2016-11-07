@@ -1,37 +1,25 @@
 'use es6';
 
-import emoji from 'node-emoji';
 import Team from './src/Team';
 
-
-export default class TeamEmoji {
-  static getEmojiFromAbbreviation(abbreviation) {
+export default class NbaEmoji {
+  static getEmoji(teamAbbreviation) {
     for (let team of Team.enumValues) {
-      if (team.abbreviation == abbreviation) {
-        return TeamEmoji.getEmojiFromTeam(team);
+      if (team.abbreviation == teamAbbreviation) {
+        return team == NbaEmoji.getCurrentChampion() ?
+          NbaEmoji.getCurrentChampionEmoji()
+          : team.emoji;
       }
     }
 
-    throw new Error('Unknown team abbrevation');
-  }
-
-  static getEmojiFromTeam(team) {
-    if !(team instanceof Team) {
-      throw new Error('team must be a Team instance');
-    }
-
-    if (team == TeamEmoji.getCurrentChampion()) {
-      return emoji.get(TeamEmoji.getCurrentChampionEmojiValue());
-    }
-
-    return emoji.get(team.emoji);
+    throw new Error('Unknown team abbreviation');
   }
 
   static getCurrentChampion() {
     return Team.CLEVELAND_CAVALIERS;
   }
 
-  static getCurrentChampionEmojiValue() {
-    return 'trophy';
+  static getCurrentChampionEmoji() {
+    return '🏆';
   }
 }
