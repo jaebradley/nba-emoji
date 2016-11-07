@@ -1,6 +1,15 @@
 # NBA Emojis As A Service
 [![Build Status](https://travis-ci.org/jaebradley/nba-emoji.svg?branch=master)](https://travis-ci.org/jaebradley/nba-emoji)
 
+## Usage
+```javascript
+import NbaEmoji from 'nba-emoji'
+
+// 🍀
+return NbaEmoji.getEmoji('BOS');
+```
+
+## Teams
 * Atlanta Hawks
   * `abbreviation`: `ATL`
   * `emoji`: 🐦
