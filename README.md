@@ -1,4 +1,5 @@
 # NBA Emojis As A Service
+[![Build Status](https://travis-ci.org/jaebradley/nba-emoji.svg?branch=master)](https://travis-ci.org/jaebradley/nba-emoji)
 
 * Atlanta Hawks
   * `abbreviation`: `ATL`
