@@ -1,5 +1,6 @@
 # NBA Emojis As A Service
 [![Build Status](https://travis-ci.org/jaebradley/nba-emoji.svg?branch=master)](https://travis-ci.org/jaebradley/nba-emoji)
+[![Coverage Status](https://coveralls.io/repos/github/jaebradley/nba-emoji/badge.svg?branch=master)](https://coveralls.io/github/jaebradley/nba-emoji?branch=master)
 
 ## Usage
 ```javascript
