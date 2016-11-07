@@ -1,7 +1,6 @@
 'use es6';
 
 import {expect} from 'chai';
-import emoji from 'node-emoji';
 
 import NbaEmoji from '../index';
 import Team from '../src/Team';
