@@ -1,7 +1,8 @@
 {
   "name": "nba-emoji",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "nba emoji",
+  "files": "./build",
   "scripts": {
     "test": "npm run build && mocha --compilers js:babel-core/register",
     "coverage": "babel-node ./node_modules/istanbul/lib/cli cover node_modules/.bin/_mocha -- --compilers js:babel-register ",
@@ -11,7 +12,7 @@
   },
   "author": "Jae Bradley",
   "license": "MIT",
-  "preferGlobal": true,
+  "preferGlobal": false,
   "dependencies": {
     "enumify": "^1.0.4"
   },
@@ -32,6 +33,7 @@
     "babel-plugin-add-module-exports": "0.2.1"
   },
   "directories": {
+    "lib": "build",
     "test": "test"
   },
   "repository": {
