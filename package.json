@@ -1,6 +1,6 @@
 {
   "name": "nba-emoji",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "nba emoji",
   "scripts": {
     "test": "npm run build && mocha --compilers js:babel-core/register",
@@ -28,7 +28,8 @@
     "babel-preset-stage-0": "6.5.0",
     "babel-register": "6.8.0",
     "babel-polyfill": "6.8.0",
-    "babel-istanbul": "0.8.0"
+    "babel-istanbul": "0.8.0",
+    "babel-plugin-add-module-exports": "0.2.1"
   },
   "directories": {
     "test": "test"
@@ -37,5 +38,5 @@
      "type": "git",
      "url": "https://github.com/jaebradley/nba-emoji/tree/master"
    },
-   "main": "index.js"
+   "main": "./build/index.js"
 }
