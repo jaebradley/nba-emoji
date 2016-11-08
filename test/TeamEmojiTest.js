@@ -2,7 +2,7 @@
 
 import {expect} from 'chai';
 
-import NbaEmoji from '../index';
+import NbaEmoji from '../src/index';
 import Team from '../src/Team';
 
 describe('test team emoji client', function() {
