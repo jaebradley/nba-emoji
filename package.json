@@ -1,6 +1,6 @@
 {
   "name": "nba-emoji",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "nba emoji",
   "files": "./build",
   "scripts": {
@@ -8,7 +8,7 @@
     "coverage": "babel-node ./node_modules/istanbul/lib/cli cover node_modules/.bin/_mocha -- --compilers js:babel-register ",
     "coveralls": "npm run-script coverage && node_modules/.bin/coveralls < coverage/lcov.info",
     "build": "babel src --presets babel-preset-es2015 --out-dir build",
-    "prepublish": "npm run build"
+    "prepublish": "npm run test"
   },
   "author": "Jae Bradley",
   "license": "MIT",
