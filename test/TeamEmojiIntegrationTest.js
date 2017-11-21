@@ -10,7 +10,7 @@ describe('test team emoji integration test', function() {
     expect(NbaEmoji.getEmoji('ATL')).to.eql('🐦');
     expect(NbaEmoji.getEmoji('BOS')).to.eql('🍀');
     expect(NbaEmoji.getEmoji('BKN')).to.eql('🌆');
-    expect(NbaEmoji.getEmoji('CLE')).to.eql(NbaEmoji.getCurrentChampionEmoji());
+    expect(NbaEmoji.getEmoji('CLE')).to.eql('⚔');
     expect(NbaEmoji.getEmoji('CHA')).to.eql('🐝');
     expect(NbaEmoji.getEmoji('CHI')).to.eql('🐮');
     expect(NbaEmoji.getEmoji('DAL')).to.eql('🐴');
