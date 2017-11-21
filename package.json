@@ -1,12 +1,12 @@
 {
   "name": "nba-emoji",
   "version": "0.0.6",
-  "description": "nba emoji",
+  "description": "NBA Emoji Client",
   "files": "./build",
   "scripts": {
     "test": "mocha --recursive --require babel-register",
-    "coverage": "babel-node ./node_modules/istanbul/lib/cli cover node_modules/mocha/bin/_mocha test --  --recursive --compilers js:babel-core/register",
-    "coveralls": "node_modules/.bin/coveralls < coverage/lcov.info",
+    "coverage": "istanbul cover _mocha test --  --recursive --require babel-register",
+    "coveralls": "coveralls < coverage/lcov.info",
     "prepublish": "npm run compile",
     "compile": "babel --presets es2015,stage-0 -d build/ src/"
   },
@@ -24,10 +24,10 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
-    "coveralls": "3.0.0",
-    "istanbul": "^0.4.5",
+    "coveralls": "^3.0.0",
+    "istanbul": "^1.1.0-alpha.1",
     "mocha": "^4.0.1",
-    "mocha-lcov-reporter": "^1.3.0 "
+    "mocha-lcov-reporter": "^1.3.0"
   },
   "directories": {
     "lib": "build",
