@@ -1,41 +1,80 @@
 {
   "name": "nba-emoji",
-  "version": "0.0.6",
-  "description": "NBA Emoji Client",
-  "files": "./build",
-  "scripts": {
-    "test": "mocha --recursive --require babel-register",
-    "coverage": "istanbul cover _mocha test --  --recursive --require babel-register",
-    "coveralls": "coveralls < coverage/lcov.info",
-    "prepublish": "npm run compile",
-    "compile": "babel --presets es2015,stage-0 -d build/ src/"
+  "version": "0.0.0-development",
+  "description": "NodeJS Client for NBA Emojis",
+  "keywords": [
+    "nba",
+    "emojis",
+    "nba emojis"
+  ],
+  "homepage": "https://github.com/jaebradley/nba-emoji/#readme",
+  "readme": "https://github.com/jaebradley/nba-emoji/#readme",
+  "bugs": {
+    "url": "https://github.com/jaebradley/nba-emoji/issues"
   },
-  "author": "Jae Bradley",
   "license": "MIT",
-  "preferGlobal": false,
-  "dependencies": {
-    "enumify": "^1.0.4"
+  "author": {
+    "name": "jae.b.bradley@gmail.com"
   },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-istanbul": "^0.12.2",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "chai": "^4.1.2",
-    "coveralls": "^3.0.0",
-    "istanbul": "^1.1.0-alpha.1",
-    "mocha": "^4.0.1",
-    "mocha-lcov-reporter": "^1.3.0"
-  },
-  "directories": {
-    "lib": "build",
-    "test": "test"
-  },
+  "files": [
+    "build"
+  ],
+  "browser": "build/index.js",
+  "main": "build/index.cjs.js",
+  "module": "build/index.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jaebradley/nba-emoji/tree/master"
+    "url": "https://github.com/jaebradley/nba-emoji"
   },
-  "main": "./build/index.js"
+  "global": false,
+  "scripts": {
+    "build": "BABEL_ENV=production rollup -c",
+    "codecov": "codecov",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "deploy": "npm run travis-deploy-once 'npm run semantic-release'",
+    "gc": "commit",
+    "lint": "eslint --ext .js .",
+    "prepare": "npm run build",
+    "semantic-release": "semantic-release",
+    "test": "BABEL_ENV=test jest src/ --coverage --no-cache",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "<rootDir>/build/",
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@commitlint/cli": "^6.1.3",
+    "@commitlint/config-angular": "^6.1.3",
+    "@commitlint/prompt": "^6.1.3",
+    "@commitlint/prompt-cli": "^6.1.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^22.4.3",
+    "codecov": "^3.0.1",
+    "dotenv": "^5.0.1",
+    "es-check": "^2.0.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "rollup": "^0.58.2",
+    "rollup-plugin-babel": "^4.0.0-beta.4",
+    "rollup-plugin-babel-minify": "^4.0.0",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-filesize": "^1.5.0",
+    "rollup-plugin-local-resolve": "^1.0.7",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "semantic-release": "^15.4.1",
+    "travis-deploy-once": "^5.0.0"
+  }
 }
