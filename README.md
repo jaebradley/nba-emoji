@@ -1,42 +1,70 @@
-# NBA Emojis As A Service
+# NBA Emojis (As A NodeJS Service)
+
 [![Build Status](https://travis-ci.org/jaebradley/nba-emoji.svg?branch=master)](https://travis-ci.org/jaebradley/nba-emoji)
-[![Coverage Status](https://coveralls.io/repos/github/jaebradley/nba-emoji/badge.svg?branch=master)](https://coveralls.io/github/jaebradley/nba-emoji?branch=master)
+[![codecov](https://codecov.io/gh/jaebradley/nba-emoji/branch/master/graph/badge.svg)](https://codecov.io/gh/jaebradley/nba-emoji)
 [![nba-emoji](https://img.shields.io/npm/v/nba-emoji.svg)](nba-emoji)
 [![npm](https://img.shields.io/npm/dt/nba-emoji.svg)](nba-emoji)
 
 ## Usage
-```javascript
-import NbaEmoji from 'nba-emoji'
 
-// 🍀
-return NbaEmoji.getEmoji('BOS');
+```javascript
+import {
+  get,
+  getAll,
+  TEAM,
+  SEASON,
+} from 'nba-emoji';
+
+// Get Boston Celtics Emoji for Current Season 🍀
+console.log(get({ team: TEAM.BOSTON_CELTICS }));
+
+// Get Boston Celtics Emoji for 2016-2017 Season 🍀
+console.log(get({ team: TEAM.BOSTON_CELTICS, season: SEASON_2016_2017 }));
+
+// Get Boston Celtics Emoji for 2016-2017 Season 🍀
+console.log(get({ team: 'Boston Celtics', season: SEASON_2016_2017 }));
+
+// Get Boston Celtics Emoji for 2016-2017 Season 🍀
+console.log(get({ team: 'BOS', season: SEASON_2016_2017 }));
+
+// Get Gold State Warriors Emoji for 2016-2017 Season 🏆
+console.log(get({ team: TEAM.GOLDEN_STATE_WARRIORS, season: SEASON_2016_2017 }));
+
+// Gets all emojis for Current Season
+console.log(getAll());
+
+// Gets all emojis for 2016-2017 Season
+console.log(getAll(SEASON_2016_2017));
 ```
 
+**ONlY SEASONS FROM 2014 ARE CURRENTLY SUPPORTED**
+
 ## Teams
+
 * Atlanta Hawks
   * `abbreviation`: `ATL`
-  * `emoji`: 🐦
+  * `emoji`: 🦅
 * Boston Celtics
   * `abbreviation`: `BOS`
   * `emoji`: 🍀
 * Brooklyn Nets
   * `abbreviation`: `BKN`
   * `emoji`: 🌆
-* Cleveland Cavaliers
-  * `abbreviation`: `CLE`
-  * `emoji`: ⚔
 * Charlotte Hornets
   * `abbreviation`: `CHA`
   * `emoji`: 🐝:
 * Chicago Bulls
   * `abbreviation`: `CHI`
   * `emoji`: 🐮
+* Cleveland Cavaliers
+  * `abbreviation`: `CLE`
+  * `emoji`: ⚔️
 * Dallas Mavericks
   * `abbreviation`: `DAL`
   * `emoji`: 🐴
 * Denver Nuggets
   * `abbreviation`: `DEN`
-  * `emoji`: 🔨
+  * `emoji`: ⚒️'
 * Detroit Pistons
   * `abbreviation`: `DET`
   * `emoji`: 🔧
@@ -48,10 +76,10 @@ return NbaEmoji.getEmoji('BOS');
   * `emoji`: 🚀
 * Indiana Pacers
   * `abbreviation`: `IND`
-  * `emoji`: 🏁
+  * `emoji`: 🏎️'
 * Los Angeles Clippers
   * `abbreviation`: `LAC`
-  * `emoji`: 🚢
+  * `emoji`: ⛵
 * Los Angeles Lakers
   * `abbreviation`: `LAL`
   * `emoji`: 🎥
@@ -61,12 +89,15 @@ return NbaEmoji.getEmoji('BOS');
 * Miami Heat
   * `abbreviation`: `MIA`
   * `emoji`: 🔥
+* Milwaukee Bucks
+  * `abbreviation`: `MIL`
+  * `emoji`: 🦌
 * Minnesota Timberwolves
   * `abbreviation`: `MIN`
   * `emoji`: 🐺
 * New Orleans Pelicans
   * `abbreviation`: `NOP`
-  * `emoji`: ⚜
+  * `emoji`: ⚜️
 * New York Knicks
   * `abbreviation`: `NYK`
   * `emoji`: 🗽
@@ -81,10 +112,10 @@ return NbaEmoji.getEmoji('BOS');
   * `emoji`: 🔔
 * Phoenix Suns
   * `abbreviation`: `PHX`
-  * `emoji`: 🔆
+  * `emoji`: ☀️
 * Portland Trail Blazers
   * `abbreviation`: `POR`
-  * `emoji`: 💧
+  * `emoji`: 🌲
 * Sacramento Kings
   * `abbreviation`: `SAC`
   * `emoji`: 👑
